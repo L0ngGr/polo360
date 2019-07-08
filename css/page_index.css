@@ -1,0 +1,302 @@
+/* 編輯主頁樣式 */
+
+body{
+
+	background: url(../img/background_top.png) repeat-x;
+
+	/* height: 3000px; */
+}
+
+
+/* 固定元素寬度和居中 */
+.w{
+	width: 940px;
+	margin: 0 auto;
+}
+
+.header{
+	/* background-color: #bfa; */
+	padding-top: 37px;
+	padding-bottom: 46px;
+}
+
+.logo{
+	margin-left: 15px;
+}
+
+.nav{
+	float: right;
+	margin-top: 22px;
+	/* background-color: yellow; */
+}
+
+.nav li{
+	/* width: 400px; */
+	float: left;
+	padding: 0 10px 8px;
+	border-left: 1px #d6d6d6 dotted;
+	/* background-color: green; */
+}
+
+.nav a{
+	color: #666666;
+	font: bold 14px Georgia;
+	text-decoration: none;
+}
+
+.nav a:hover{
+	color: #a1a1a1;
+	text-decoration: underline;
+}
+
+
+
+/* chrome 最小只到12px */
+.nav p{
+	color: #b7b7b7;
+	font: 11px Tahoma;
+}
+
+.banner{
+	background: url(../img/banner/banner_shadow.png) no-repeat bottom center;
+	height: 354px;
+	
+	/* 開啟相對定位 */
+	position: relative;
+}
+
+.pointDiv{
+	/* 絕對定位 */
+	position: absolute;
+
+	top: 314px;
+	left: 15px;
+}
+
+.pointDiv a{
+	float: left;
+	width: 17px;
+	height: 17px;
+	background: url(../img/point.png) no-repeat;
+	margin-left: 4px;
+	/* background-color: red; */
+}
+
+.pointDiv .active, .pointDiv a:hover{
+	background: url(../img/point_act.png) no-repeat;
+}
+
+.content h1{
+	text-align: center;
+	font: bold 24px Georgia;
+	padding: 6px 0 20px 0;
+	background: url(../img/line.png) no-repeat center bottom;
+	margin-bottom: 38px;
+}
+
+.content .pl, .content .cs, .content .uc,
+.contact .sc, .contact .co, .contact .nu
+{
+	
+	width: 300px;
+	float: left;
+
+	
+}
+
+.content .cs, .contact .co{
+	margin: 0 20px;
+}
+
+.content h2{
+	font: 21pt Georgia;
+	color: #11719e;
+}
+
+.content .p1{
+	font: 12px Helvetica;
+	color: #8c8c8c;
+}
+
+.content .imgDiv{
+	width: 299px;
+	height: 190px;
+	background: url(../img/img_bg.png) no-repeat;
+	margin: 16px 0 11px 0;
+
+	text-align: center;
+	padding-top: 12px;
+}
+
+.content .p2{
+	height: 92px;
+	font: 13px Helvetica;
+	color: #3e3e3e;
+}
+
+.content .lm{
+	display: block;
+	width: 163px;
+	height: 40px;
+	background: url(../img/btn1.png) no-repeat;
+	text-decoration: none;
+	color: #016999;
+	font: 12px/40px Helvetica;
+	text-indent: 1em;
+	margin-bottom: 35px; 
+	
+}
+
+.contact{
+	background: url(../img/line.png) no-repeat top center;
+	
+}
+
+.contact .sc, .contact .co, .contact .nu{
+	padding-top: 45px;
+}
+
+.contact .txt{
+	width: 281px;
+	height: 33px;
+	line-height: 33px;
+	background: url(../img/text.png) no-repeat;
+
+	/* _background-attachment: fixed; */
+
+	border: none;
+	padding: 0 8px;
+	margin: 0 0 16px 0;
+}
+
+::placeholder{
+	color: #d4d4d4;
+}
+
+.contact .tarea{
+	width: 280px;
+	height: 118px;
+	background: url(../img/textarea.png) no-repeat;
+
+	border: none;
+	overflow: auto;
+	/* 設置文本愈 不能調整大小 */
+	resize: none;
+	padding: 8px;
+	margin: 0;
+}
+
+.contact .btn{
+	width: 163px;
+	height: 32px;
+	background: url(../img/btn2.png) no-repeat;
+
+	border: none;
+
+	padding: 0;
+	margin: 11px 0 23px 0;
+
+	color: white;
+	font: 13px Georgia;
+	text-align: left;
+	text-indent: 1em;
+
+
+	/* cursor可以設置滑鼠指針的樣式 */
+	cursor: pointer;
+
+}
+
+.contact h2{
+	/* background-color: red; */
+
+	font: 18px/1 Georgia;
+	color: #444444;
+	border-bottom: 1px dashed #d3d3d3;
+	padding: 42px 0 10px 0;
+	margin-bottom: 15px;
+}
+
+.sc .p1{
+	font: 12px/1 Helvetica;
+	color: #444444;
+
+}
+
+.sc .comunity{
+	/* 清除空格 */
+	font-size: 0;
+	margin-top: 4px;
+
+}
+
+.sc .comunity a{
+	margin-right: 6px;
+}
+
+.sc .nl{
+	font: bold 18px/1 "Gill Sans MT";
+
+	padding: 35px 0 10px;
+
+
+}
+
+.sc .txt{
+	margin-top: 15px; 
+	margin-bottom: 0;
+}
+
+
+.nu img{
+	float: left;
+	margin-right: 8px;
+}
+
+.nu p{
+	font: 12px/1 Helvetica;
+	color: #444444;
+	height: 59px;
+
+	padding-bottom: 9px;
+	margin-bottom: 14px;
+	border-bottom: 1px dashed #d3d3d3;
+}
+
+.nu .no_margin{
+	margin-bottom: 0;
+}
+
+
+.footer{
+	height: 173px;
+	background: #333333;
+
+	border-top: 10px solid #4c4c4c;
+
+}
+
+.footer a, .footer p{
+	color: #999999;
+	font: 11px Helvetica;
+	text-decoration: none;
+}
+
+.footer a:hover{
+	color: white;
+}
+
+.footer p{
+	margin-left: 8px;
+	margin-bottom: 6px;
+}
+
+.footer .w{
+	padding-top: 18px;
+}
+
+.footer .copy{
+	float: right;
+	/* 解決ie6 雙重外邊距(向右浮動會使右邊外邊距雙倍, 向左則是左外邊距雙倍) */
+	display: inline;
+}
